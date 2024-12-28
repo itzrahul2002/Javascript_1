@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .posneg
+        {
+           
+            height: 40px;
+            width: 30%;
+            margin-top: 5%;
+            margin-left: 20%;
+            margin-bottom: 1%;
+            cursor: pointer;
+        }
+        .odd_even
+        {
+            height: 40px;
+            width: 30%;
+            margin-top: 5%;
+            margin-left: 20%;
+            margin-bottom: 1%;
+            cursor: pointer;
+        }
+        .days
+        {
+            height: 40px;
+            width: 30%;
+            margin-top: 5%;
+            margin-left: 20%;
+            margin-bottom: 1%;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function posneg()
+        {
+            var num=parseInt(prompt("enter a number ?"));
+            if(num>0)
+            {
+                alert("it is Positive Numbers"+num);
+            } 
+            else
+            {
+                alert(" it is Negative Numbers"+num)
+            }
+        }
+        function odd_even()
+        {
+            var a=parseInt(prompt("enter a number ?"));
+            if(a%2==0)
+            {
+                alert("it's is Even Numner"+a)
+            }
+            else
+            {
+                alert("it's is Odd Number")
+            }
+        }
+        function weedays()
+        {
+            var x=parseInt(prompt("enter a numbers"));
+            if(x==1)
+            {
+                alert("MONDAY");
+            }
+            else if(x==2)
+            {
+                alert("TUESDAY");
+            }
+            else if(x==3)
+            {
+                alert("WEDNSEDAY");
+            }
+            else if(x==4)
+            {
+                alert("THURSDAY");
+            }
+            else if(x==5)
+            {
+                alert("FRIDAY");
+            }
+            else if(x==6)
+            {
+                alert("SATURDAY");
+            }
+            else
+            {
+                alert("INVAILD DATA !");
+            }
+        }
+            function maxThree()
+            {
+                var a=parseInt(prompt("Enter a First number"));
+                var b=parseInt(prompt("Enter second Number"));
+                var c=parseInt(prompt("Enter Third Number"));
+                if(a>b && a>c)
+                {
+
+                    alert("Maximumm Number is"+a)
+                }
+                else if(b>a  && b>c) 
+                {
+                    alert("Maximum Number is "+b)
+                }
+                else
+                { 
+                    alert("Maximum number is"+ c)
+                }
+                
+            }
+            function days()
+            {
+                 var m=parseInt(prompt("Enter Months Num"))
+                {
+                    if(m==1||m==3||m==5||m==7||m==8||m==10||m==12)
+                    {
+                        document.write("31 Days")
+                    }
+                    else if(m=2)
+                    {
+                        document.write("28 Days")
+                    }
+                    else if(m==4||m==6||m==9||m==11)
+                    {
+                        document.write("30 Days")
+                    }
+                    else
+                    {
+                        document.write("Invalid Data")
+                    }
+                }
+            }          
+            function months()
+            {
+                var r=parseInt(prompt("enter Months number"))
+                {
+                    if(r==1)
+                    {
+                        alert("january")
+                    }
+                    else if(r==2)
+                    {
+                        alert("febuary")
+                    }
+                    else if(r==3)
+                    {
+                        alert("march")
+                    }
+                    else if(r==4)
+                    {
+                        alert("april")
+                    }
+                    else if(r==5)
+                    {
+                        alert("may")
+                    }
+                    else if(r==6)
+                    {
+                        alert("june")
+                    }
+                    else if(r==7)
+                    {
+                        alert("july")
+                    }
+                    else if(r==8)
+                    {
+                        alert("August")
+                    }
+                    else if(r==9)
+                    {
+                        alert("september")
+                    }
+                    else if(r==10)
+                    {
+                        alert("october")
+                    }
+                    else if(r==11)
+                    {
+                        alert("november")
+                    }
+                    else if(r==12)
+                    {
+                        alert("december")
+                    }
+                    else
+                    {
+                        alert("Invalid")
+                    }
+
+                }
+            }
+            function Findmonths()
+        {
+            var m=parseInt(document.getElementById("months").value)
+            if(m==1)
+            {
+                document.getElementById("result").innerHTML="Januray"
+            }
+            else if(m==2)
+            {
+                document.getElementById("result").innerHTML="Feburay"
+            }
+            else if(m==3)
+            {
+                document.getElementById("result").innerHTML=" March"
+            }
+            else if(m==4)
+            {
+                document.getElementById("result").innerHTML="April"
+            }
+            else if(m==5)
+            {
+                document.getElementById("result").innerHTML="May"
+            }
+            else if(m==6)
+            {
+                document.getElementById("result").innerHTML="june"
+            }
+            else if(m==7)
+            {
+                document.getElementById("result").innerHTML="july"
+            }
+            else if(m==8)
+            {
+                document.getElementById("result").innerHTML="August"
+            }
+            else if(m==9)
+            {
+                document.getElementById("result").innerHTML="September"
+            }
+            else if(m==10)
+            {
+                document.getElementById("result").innerHTML="October"
+            }
+            else if(m==11)
+            {
+                document.getElementById("result").innerHTML="November"
+            }
+            else if(m==12)
+            {
+                document.getElementById("result").innerHTML="December"
+            }
+
+            else
+            {
+                alert("Invalid Data")
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="submit" value="Find Possitve Negative Numbers" onclick="posneg()" class="posneg">
+    <br>
+    <input type="submit" value="Find Odd & Even NUmbers" onclick="odd_even()" class="odd_even">
+    <br>
+    <input type="submit" value="Find Weekday From Numbers" onclick="weedays()" class="days">
+    <br>
+    <input type="submit" value="Max three" onclick="maxThree()"class="days">
+    <br>
+    <input type="submit" value="find months days" onclick="days()" class="days">
+    <br>
+    <input type="button" value="Find months Numbers" onclick="months()" class="days">
+    <br>
+    <input type="text" name="" id="months" placeholder="find Months Names ?" class="days">
+    <input type="submit" value="Find months Names" onclick="Findmonths()">
+    <div id="result" style="font-size: 30px; text-align: center; color: red;"></div>
+</body>
+</html>
+
+
+
+
+
+
+    

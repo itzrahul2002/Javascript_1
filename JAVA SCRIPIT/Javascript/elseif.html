@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function maxthree()
+        {
+            var a=parseInt(prompt("Enter a First Number"));
+            var b=parseInt(prompt("Enter a second Number"));
+            var c=parseInt(prompt("Enter a Third NUmber"));
+
+            if(a>b && a>c)
+            {
+                alert("Maximum Num is"+a)
+            }
+            else if(b>a && b>c)
+            {
+                alert("Maximum Num is" +b)
+            }
+            else if(c>a && c>b)
+            {
+                alert("Maximum Num is"+c)
+            }
+            else
+            {
+                alert("Invalid Data")
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="submit" value="find three max" onclick="maxthree()">
+    <br/>
+    <input type="text" name="" id="que">
+</body>
+</html>

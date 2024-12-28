@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .name
+        {
+            font-size: 5px;
+            font-family: "Comic Sans MS", Times, serif;
+        }
+        .text
+        {
+            font-size: 15px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-top: 10%;
+        }
+    </style>
+    <script>
+        var count=5
+        function zoom()
+        {
+            var counter=count+=2
+            document.getElementById("java").style.fontSize=counter+"px"
+            if(count<=50)
+            {
+                document.getElementById("java").style.color="red"
+            }
+            else if(count<=80)
+            {
+                document.getElementById("java").style.color="yellow"
+            }
+            else if(count<=100)
+            {
+                document.getElementById("java").style.color="green"
+            }
+            else if(count<=120)
+            {
+                document.getElementById("java").style.color="blue"
+            }
+            else if(count<=140)
+            {
+                document.getElementById("java").style.color="orange"
+            }
+            else if(count<=160)
+            {
+                document.getElementById("java").style.color="brown"
+            }
+            else
+            {
+                count=20
+            }
+        }
+        var count=15;
+        function textZoom()
+        {
+            var counte=count+=1;
+            if(counte>=30)
+            {
+                document.getElementById("txt").style.fontSize=counte+"px"
+                document.getElementById("txt").style.color="red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div align="center" class="name" onmousemove="zoom()" id="java">
+        WEB DEVELOPER
+    </div>
+    <div align="center" class="text" onmousemove="textzoom()" id="txt">
+        rahul
+    </div>
+</body>
+</html>
+

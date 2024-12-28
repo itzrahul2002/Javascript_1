@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function change(){
+            document.getElementById('text').style.fontSize='100px'
+        }
+       function on (){
+            document.getElementById('bulb').src="assets/gallery/pic_bulbon.gif"
+       }
+       function off(){
+            document.getElementById('bulb').src="assets/gallery/pic_bulboff.gif"
+       }
+    </script>
+</head>
+<body>
+    <h1 id="text">
+        The Avengers 😊
+    </h1>
+    <Button onclick="change()">Click Me !</Button>
+
+    <div>
+        <h1>JavaScript ➡️</h1>
+        <div style="margin: 5% 0 0 30%;">
+            <button onclick="on()">
+                Turn on Light 💡
+            </button>
+            <img src="assets/gallery/pic_bulboff.gif" alt="" srcset="" style="width: 120px;" id="bulb">
+            <button onclick="off()">
+                Turn off Light 📴
+            </button>
+        </div>
+    </div>
+</body>
+</html>

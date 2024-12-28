@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .container{
+            -webkit-box-shadow: 15px 14px 18px 1px rgba(0,0,0,0.68);
+            -moz-box-shadow: 15px 14px 18px 1px rgba(0,0,0,0.68);
+            box-shadow: 15px 14px 18px 1px rgba(0,0,0,0.68);
+            width: 60%;
+            height: 60vh;
+        }
+        .btnbox{
+            width: 60%;
+            margin: 30px 0 100px 0;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <script>
+        function add(){
+          
+            var x = document.getElementById('t1').value;
+            var y = document.getElementById('t2').value;
+
+
+           document.getElementById('ans').innerHTML="Result :"+Number(x)+Number(y);
+            
+        }
+        function mul(){
+            var x = document.getElementById('t1').value;
+            var  y = document.getElementById('t2').value;
+
+           document.getElementById('ans').innerHTML='Result :'+Number(x)*Number(y);
+        }
+        function sub(){
+            var x = document.getElementById('t1').value;
+            var y = document.getElementById('t2').value;
+
+           document.getElementById('ans').innerHTML='Result :'+Number(x)-Number(y);
+
+        }
+        function div(){
+            var x = document.getElementById('t1').value;
+            var  y = document.getElementById('t2').value;
+
+           document.getElementById('ans').innerHTML='Result :'+Number(x)/Number(y);
+
+        }
+    </script>
+    <div class="container" border="1px" align="center" width="45%" height="500px" style="font-family: Comic Sans MS; margin-top: 5%;">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Simple Calculator</h1>
+                <div>
+                    Enter First Number : <input type="text" name="" id="t1">
+                </div>
+                <div>
+                    Enter Second Number : <input type="text" name="" id="t2">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 5%;">
+              <div class="col-md-2"></div>
+              <div class="col-md-2">
+                <td> <button onclick="add()" class="btn btn-success">Addition</button></td>
+              </div>
+              <div class="col-md-2">
+                <td> <button onclick="sub()" class="btn btn-success">Subtraction</button></td>
+              </div>
+              <div class="col-md-2">
+                <td> <button onclick="mul()" class="btn btn-success">Multiplication</button></td>
+              </div>
+              <div class="col-md-2">
+                <td> <button onclick="div()" class="btn btn-success">Division</button></td>
+              </div>
+              <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" id="ans"></div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</body>
+</html>

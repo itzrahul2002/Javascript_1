@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function find()
+        {
+            var namelist=["rakesh","suresh","yuvraj","rahul","vicky","sonu","suraj","roshan"]
+            var name=prompt("Enter A Name");
+            var temp=false;
+            for(var i=0;i<namelist.length;i++)
+            {
+                if(namelist[i]==name)
+                {
+                    temp=true;
+                }
+            }
+            if(temp==true)
+            {
+                document.write("Your Name is found In List :" +name);
+            }
+            else
+            {
+                document.write("Your Name Is Not Found In List :" +name)
+            }
+        }
+        function update()
+        {
+            var namelist=["rakesh","suresh","yuvraj","rahul","vicky","sonu","suraj","roshan"];
+            var old_name=prompt("Enter Your Old Name");
+            var new_name=prompt("Enter Your New Name");
+            var temp=false;
+            for(var i=0;i<namelist.length;i++)
+            {
+                if(namelist[i]==old_name)
+                {
+                    namelist[i]=new_name;
+                    temp=true;
+                }
+            }
+            if(temp==false)
+            {
+                document.write("<br/>"+"Old Name Doesn't Exits In Our Data : "+old_name);
+            }
+            else
+            {
+                for(var i=0;i<namelist.length;i++)
+                {
+                    document.write("<br/>"+namelist[i]);
+                }
+            }
+        }
+        function rev()
+        {
+            var name=prompt("Enter Your Name");
+            var temp=false;
+            for(var i=name.length-1;i>0;i--)
+            {
+                document.write(name[i])
+            }
+        // }
+  
+        //     var name=["rakesh","suresh","yuvraj","rahul","vicky","sonu","suraj","roshan"];
+        //     for(var i=name.length-1; i>=0;i--)
+        //     {
+        //         document.write(name[i])
+        }
+                
+    </script>
+</head>
+<body>
+    <input type="submit" value="Find" onclick="find()">
+    <br/>
+    <input type="submit" value="Click" onclick="update()">
+    <br/>
+    <input type="submit" value="Reverse_Name" onclick="rev()">
+    <br/>
+    <input type="submit" value="Reverse" onclick="reverse()">
+</body>
+</html>

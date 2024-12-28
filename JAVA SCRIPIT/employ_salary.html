@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text
+        {
+            width: 60%;
+            height: 30px;
+            margin-left: 18%;
+            margin-bottom: 3%;
+            font-size: large;
+            border-width: 1px;
+            border-bottom-width: 2px;
+            outline: none;
+            padding-left: 2%;
+        }
+        .btn
+        {
+            width: 61.5%;
+            height: 40px;
+            margin-left: 18%;
+            margin-bottom: 3%;
+            border-radius: .5rem;
+            font-size: 30px;
+            font-weight: 800;
+            font-family: "Courier", Times, serif;
+            cursor: pointer;
+            border-width: 0px;
+            background-color: bisque;
+            margin-top: 2%;
+        }
+        .btn:hover
+        {
+            background-color: aquamarine;
+        }
+        .result
+        {
+            color: blue;
+        }
+        .result1
+        {
+            text-align: center;
+            color: red;
+            font-size: 30px;
+            margin-bottom: 3%;
+        }
+        .result
+        {
+            margin-left: 3%;
+            color: blue;
+            font-size: 20px;
+            margin-bottom: 2%;
+        }
+        .head
+        {
+            text-align: center;
+            font-size: 50px;
+            font-weight: 800;
+            color: rgb(21, 173, 204);
+        }
+        table
+        {
+            -webkit-box-shadow: 15px 14px 18px 1px rgba(0,0,0,0.68);
+            -moz-box-shadow: 15px 14px 18px 1px rgba(0,0,0,0.68);
+            box-shadow: 15px 14px 18px 1px rgba(0,0,0,0.68);
+            font-family: Comic Sans MS;
+            background-color: rgb(214, 231, 240);
+
+        }
+    </style>
+    <script>
+        function cal()
+        {
+            var emp_id=parseInt(document.getElementById("p").value);
+            var emp_name=document.getElementById("q").value;
+            var emp_slary=parseInt(document.getElementById("r").value);
+            if(emp_slary>=1000 && emp_slary<=10000)
+            {
+                var da=0;
+                var hra=5;
+                var da_per=emp_slary*da/100;
+                var hra_per=emp_slary*hra/100;
+                var gros_slry=da_per+hra_per+emp_slary
+                document.getElementById("x").innerHTML="YOUR SALARY DETAILS"
+                document.getElementById("x1").innerHTML="Employe I D :"+emp_id;
+                document.getElementById("x2").innerHTML=" Employe name :"+emp_name;
+                document.getElementById("x3").innerHTML="Employe Basic Salary :"+emp_slary;
+                document.getElementById("x4").innerHTML="Employe DA in percantage :"+da+"%"
+                document.getElementById("x5").innerHTML="Employe DA in Rupess :"+da_per+"RS"
+                document.getElementById("x6").innerHTML="Employe HRA in percantage :"+hra+"%"
+                document.getElementById("x7").innerHTML="Employe HRA in Rupess :"+hra_per+"RS"
+                document.getElementById("x8").innerHTML="Employe Gross Salary :"+gros_slry+"RS"
+            }
+            else if(emp_slary>=10000 && emp_slary<=20000)
+            {
+                var da=5;
+                var hra=10;
+                var da_per=emp_slary*da/100;
+                var hra_per=emp_slary*hra/100;
+                var gros_slry=da_per+hra_per+emp_slary
+                document.getElementById("x").innerHTML="YOUR SALARY DETAILS"
+                document.getElementById("x1").innerHTML="Employe I D :"+emp_id;
+                document.getElementById("x2").innerHTML=" Employe name :"+emp_name;
+                document.getElementById("x3").innerHTML="Employe Basic Salary :"+emp_slary;
+                document.getElementById("x4").innerHTML="Employe DA in percantage :"+da+"%"
+                document.getElementById("x5").innerHTML="Employe DA in Rupess :"+da_per+"RS"
+                document.getElementById("x6").innerHTML="Employe HRA in percantage :"+hra+"%"
+                document.getElementById("x7").innerHTML="Employe HRA in Rupess :"+hra_per+"RS"
+                document.getElementById("x8").innerHTML="Employe Gross Salary :"+gros_slry+"RS"
+            }
+            else if(emp_slary>=20000 && emp_slary<=30000)
+            {
+                var da=5;
+                var hra=15;
+                var da_per=emp_slary*da/100;
+                var hra_per=emp_slary*hra/100;
+                var gros_slry=da_per+hra_per+emp_slary
+                document.getElementById("x").innerHTML="YOUR SALARY DETAILS"
+                document.getElementById("x1").innerHTML="Employe I D :"+emp_id;
+                document.getElementById("x2").innerHTML=" Employe name :"+emp_name;
+                document.getElementById("x3").innerHTML="Employe Basic Salary :"+emp_slary;
+                document.getElementById("x4").innerHTML="Employe DA in percantage :"+da+"%"
+                document.getElementById("x5").innerHTML="Employe DA in Rupess :"+da_per+"RS"
+                document.getElementById("x6").innerHTML="Employe HRA in percantage :"+hra+"%"
+                document.getElementById("x7").innerHTML="Employe HRA in Rupess :"+hra_per+"RS"
+                document.getElementById("x8").innerHTML="Employe Gross Salary :"+gros_slry+"RS"
+            }
+            else if(emp_slary>=30000 && emp_slary<=40000)
+            {
+                var da=10;
+                var hra=10;
+                var da_per=emp_slary*da/100;
+                var hra_per=emp_slary*hra/100;
+                var gros_slry=da_per+hra_per+emp_slary
+                document.getElementById("x").innerHTML="YOUR SALARY DETAILS"
+                document.getElementById("x1").innerHTML="Employe I D :"+emp_id;
+                document.getElementById("x2").innerHTML=" Employe name :"+emp_name;
+                document.getElementById("x3").innerHTML="Employe Basic Salary :"+emp_slary;
+                document.getElementById("x4").innerHTML="Employe DA in percantage :"+da+"%"
+                document.getElementById("x5").innerHTML="Employe DA in Rupess :"+da_per+"RS"
+                document.getElementById("x6").innerHTML="Employe HRA in percantage :"+hra+"%"
+                document.getElementById("x7").innerHTML="Employe HRA in Rupess :"+hra_per+"RS"
+                document.getElementById("x8").innerHTML="Employe Gross Salary :"+gros_slry+"RS"
+            }
+            else if(emp_slary>=40000 && emp_slary<=50000)
+            {
+                var da=15;
+                var hra=20;
+                var da_per=emp_slary*da/100;
+                var hra_per=emp_slary*hra/100;
+                var gros_slry=da_per+hra_per+emp_slary
+                document.getElementById("x").innerHTML="YOUR SALARY DETAILS"
+                document.getElementById("x1").innerHTML="Employe I D :"+emp_id;
+                document.getElementById("x2").innerHTML=" Employe name :"+emp_name;
+                document.getElementById("x3").innerHTML="Employe Basic Salary :"+emp_slary;
+                document.getElementById("x4").innerHTML="Employe DA in percantage :"+da+"%"
+                document.getElementById("x5").innerHTML="Employe DA in Rupess :"+da_per+"RS"
+                document.getElementById("x6").innerHTML="Employe HRA in percantage :"+hra+"%"
+                document.getElementById("x7").innerHTML="Employe HRA in Rupess :"+hra_per+"RS"
+                document.getElementById("x8").innerHTML="Employe Gross Salary :"+gros_slry+"RS"
+            }else if(emp_slary>50000)
+            {
+                var da=15;
+                var hra=20;
+                var da_per=emp_slary*da/100;
+                var hra_per=emp_slary*hra/100;
+                var gros_slry=da_per+hra_per+emp_slary
+                document.getElementById("x").innerHTML="YOUR SALARY DETAILS"
+                document.getElementById("x1").innerHTML="Employe I D :"+emp_id;
+                document.getElementById("x2").innerHTML=" Employe name :"+emp_name;
+                document.getElementById("x3").innerHTML="Employe Basic Salary :"+emp_slary;
+                document.getElementById("x4").innerHTML="Employe DA in percantage :"+da+"%"
+                document.getElementById("x5").innerHTML="Employe DA in Rupess :"+da_per+"RS"
+                document.getElementById("x6").innerHTML="Employe HRA in percantage :"+hra+"%"
+                document.getElementById("x7").innerHTML="Employe HRA in Rupess :"+hra_per+"RS"
+                document.getElementById("x8").innerHTML="Employe Gross Salary :"+gros_slry+"RS"
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <table align="center" border="0px" width="50%" height="400px" style="font-family: Courier, Times, serif;">
+        <tr>
+            <td>
+                <div class="head">salary calculator</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="" id="p" class="text" placeholder="Enter Your I D">
+                <br>
+                <input type="text" name="" id="q" class="text" placeholder="Enter Your Name">
+                <br>
+                <input type="text" name="" id="r" class="text" placeholder=" Enter Your Salary">
+                <br>
+                <input type="submit" value="Calculate"  class="btn" id="s" onclick="cal()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <diV id="x" class="result1"></diV>
+                <div id="x1" class="result"></div>
+                <div id="x2" class="result"></div>
+                <div id="x3" class="result"></div>
+                <div id="x4" class="result"></div>
+                <div id="x5" class="result"></div>
+                <div id="x6" class="result"></div>
+                <div id="x7" class="result"></div>
+                <div id="x8" class="result"></div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

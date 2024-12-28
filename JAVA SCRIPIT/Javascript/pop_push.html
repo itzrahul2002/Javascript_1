@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       function pop()
+       {
+            let arr=["rahul","vicky","thor","mahadev"];
+            arr.pop()
+            // document.getElementById('x1').innerHTML="This is Pop method" +arr;
+            document.write(arr)
+       }
+
+       function push()
+       {
+            let arr1=[12,454,76,87,343,22];
+            arr1.push(9999)
+            document.write(arr1)
+       }
+       function rem()
+       {
+            let name=["ironman","thor","antman","captionamerica","hulk"]
+            name.shift();
+            document.write(name)
+       }
+    </script>
+</head>
+<body>
+    <div class="x1"></div>
+    <button onclick="pop()">POP METHOD</button>
+    <br/>
+    <button onclick="push()">PUSH METHOD</button>
+    <br/>
+    <button onclick="rem()">SHIFT METHOD</button>
+</body>
+</html>

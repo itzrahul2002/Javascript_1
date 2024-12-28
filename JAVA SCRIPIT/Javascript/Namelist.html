@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function namefound()
+        {
+            var NameList=["rahul","rahulkeshari","rajeev sir","ironman","thor"];
+            var temp=false
+            var name=prompt("Enter Your Name");
+            var i=0;
+
+            for(var i=0;i<NameList.length;i++)
+            {
+                if(NameList[i]==name)
+                {
+                    temp=true;
+                }
+            }
+            if(temp==true)
+            {
+                document.write("Your Name Exits In our List "+name);
+            }
+            else
+            {
+                document.write("Your Name Doesn't Exits in our List "+name);
+            }
+        }
+        
+        function update()
+        {
+            var name=["rahul","rahulkeshari","rajeevsir","ironman","thor"];
+            var old_name=prompt("Enter a old Name");
+            var new_name=prompt("Enter a New Name");
+            var temp=false;
+            
+            for(var i=0;i<name.length;i++)
+            {
+                if(name[i]==old_name)
+                {
+                    name[i]=new_name
+                    temp=true;
+                }
+               
+            }
+            if(temp==false)
+            {
+                document.write("old name not found :"+old_name)
+            }
+            else
+            {
+                // document.write("invalid data")
+                for(var i=0;i<name.length;i++)
+                {
+                    document.write("<br/>"+name[i]);
+                }
+            }
+        }
+        function rev()
+        {
+            var namelist=["raju", "kaju","chutki","bheem","dolu","bholu"]
+
+            for(var i=namelist.length-1;i>=0;i--)
+            {
+                document.write("<br/>"+namelist[i])
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="submit" value="NameList" onclick="namefound()">
+    <br/>
+    <input type="submit" value="UPDATE NAME" onclick="update()">
+    <br/>
+    <input type="submit" value="REVERSE" onclick="rev()">
+</body>
+</html>

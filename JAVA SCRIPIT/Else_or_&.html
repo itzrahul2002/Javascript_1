@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn1
+        {
+            width: 50%;
+            height: 40px;
+            margin-top: 3%;
+            margin-left: 20%;
+        }
+    </style>
+    <script>
+        function maxthree()
+        {
+            var a=parseInt(prompt("Enter First Number"));
+            var b=parseInt(prompt("Enter Second Number"));
+            var c=parseInt(prompt("Enter Third Number"));
+
+            if(a>b && a>c)
+            {
+                alert("Maximum Number is"+a)
+            }
+            else if(b>a && b>c)
+            {
+                alert("Maximum Number is"+b)
+            }
+            else
+            {
+                alert("Maximum Number is"+c)
+            }
+        }
+        function maximum()
+        {
+            var x=parseInt(prompt("Enter First Number"));
+            var y=parseInt(prompt("Enter Second Number"));
+            var z=parseInt(prompt("Enter Third Number"));
+            var r=parseInt(prompt("Enter Fourth Number"));
+            
+            if(x>y && x>z && x>r)
+            {
+                alert("max is"+x)
+            }
+            else if(y>x && y>z && y>r)
+            {
+                alert("max is"+y)
+            }
+            else if(z>x && z>y && z>r)
+            {
+                alert("max is"+z)
+            }
+            else
+            {
+                alert("maxi is"+r)
+            }
+        }
+        function maxfive()
+        {
+            var a=parseInt(prompt("first number"));
+            var b=parseInt(prompt("Second number"));
+            var c=parseInt(prompt("Third number"));
+            var d=parseInt(prompt("Fourth number"));
+            var e=parseInt(prompt("Fifth number"));
+            if(a>b && a>c && a>d && a>e)
+            {
+                alert("max is"+a)
+            }
+            else if(b>a && b>c && b>d && b>e)
+            {
+                alert("max is"+b)
+            }
+            else if(c>a && c>b && c>d && c>e)
+            {
+                alert("max is"+c)
+            }
+            else if(d>a && d>b && d>c && b>e)
+            {
+                alert("max is"+d)
+            }
+            else
+            {
+                alert("max ix "+e)
+            }
+        }
+        function volcon()
+        {
+            var x=prompt("find");
+            if(x=='a'||x=='e'||x=='i'||x=='o'||x=='u'||x=='A'||x=='E'||x=='I'||x=='O'||x=='U')
+            {
+                alert("it's vowels")
+            }
+            else if(x=='b'||x=='c'||x=='d'||x=='f'||x=='g'||x=='h'||x=='j'||x=='k'||x=='l'||x=='m'||x=='n'||x=='p'||x=='q'||x=='r'||x=='s'||x=='t'||x=='v'||x=='w'||x=='x'||x=='y'||x=='z'||x=='B'||x=='C'||x=='D'||x=='F'||x=='G'||x=='H'||x=='J'||x=='K'||x=='L'||x=='M'||x=='N'||x=='P'||x=='Q'||x=='R'||x=='S'||x=='T'||x=='V'||x=='W'||x=='X'||x=='Y'||x=='Z')
+            {
+                alert("Its's Consonants")
+            }
+            else
+            {
+                alert("invalid data")
+            }
+        }
+        function marks()
+        {
+            var phy=parseInt(prompt("Enter Your Physics Number"));
+            var chem=parseInt(prompt("Enter Your Chemistry Number"));
+            var math=parseInt(prompt("Enter Your Maths Number"));
+            var total=phy+chem+math
+            var average=total/3;
+
+            if(average>=1 && average<30 && phy>30 && chem>30 && math>30)
+            {
+                alert("You are Fail")
+            }
+            else if(average>=30 && average<45 && phy>30 && chem>30 && math>30)
+            {
+                alert("You got a ||| Grade")
+            }
+            else if(average>=45 && average<60 && phy>30 && chem>30 && math>30)
+            {
+                alert("You got a || Grade")
+            }
+            else if(average>=60 && average<=100 && phy>30 && chem>30 && math>30)
+            {
+                alert("You got a | Grade")
+            }
+            else
+            {
+                alert("you are fail")
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <input type="submit" value="Find Maximum Of Three Numbers" onclick="maxthree()" class="btn1">
+    </div>
+      <div>
+             <input type="submit" value="Find Maximum Of Four Numbers" onclick="maximum()" class="btn1">
+      </div>
+    <br>
+    <div>
+        <input type="submit" value="Find max Of Five numbers" onclick="maxfive()" class="btn1">
+    </div>
+    <br>
+    <diV>
+        <input type="submit" value="find vowels consonants" onclick="volcon()" class="btn1">
+    </diV>
+    <div>
+        <input type="submit" value=" find marks" onclick="marks()" class="btn1">
+    </div>
+</body>
+</html>

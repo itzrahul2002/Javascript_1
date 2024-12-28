@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .prev
+        {
+            height: 40px;
+            width: 80%;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        var count=0;
+        function next()
+        {
+            var counter=count+=1;
+            document.getElementById("img1").src="assets/gallery/0"+counter+".jpg"
+            if(counter>=9)
+            {
+                count=0;
+            }
+        }
+        function prev()
+        {
+            var counter=count-=1;
+            
+            document.getElementById("img1").src="assets/gallery/0"+counter+".jpg"
+            if(counter<=1)
+            {
+                count=9;
+            }
+           
+        }
+    </script>
+</head>
+<body>
+    <table border="0px" align="center">
+        <tr>
+            <td>
+                <img src="assets/gallery/left arrow.png" alt="" onclick="prev()" class="prev">
+            </td>
+            <td>
+                <img src="assets/gallery/01.jpg" alt="" onclick="img()" id="img1">
+            </td>
+            <td>
+                <img src="assets/gallery/right arrow.png" alt="" onclick="next()" class="prev">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+
+
+
+
+

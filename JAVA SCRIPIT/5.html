@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function print_current_page() {
+            // Call the window.print() method to initiate the printing of the current page
+            window.print();
+        } 
+        function sq(n){
+            return Math.pow(n,2);
+        }
+        function oddeven(num){
+            if(num%2==0){
+                document.write("The number is even : "+num);
+            }
+            else{
+                document.write("The number is odd : "+num)
+            }
+        }
+        oddeven(9);
+
+
+
+        let x=sq(5);
+        document.write("<br><br><br>Square of Number :"+x);
+
+        let student={
+            id:101,
+            name:"Ram",
+            course:"Java fullStack",
+            bookfee:400,
+            tax:100,
+            totalamount: function(){
+                return this.bookfee+this.tax;
+            }
+        }
+        document.write("<h1>Students Details : <br> Id is :"+student.id+"<br> Name is :"+student["name"]+"<br> Course is :"+student.course+"<br> Student total fee is : "+student.totalamount()+"</h1>"); 
+
+        </script>
+    <p>Click the button to print the current page.</p>
+    <button onclick="print_current_page()">Print this page</button>
+    
+</body>
+</html>

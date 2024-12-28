@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+         var counter=10
+         textzom=()=>
+        {
+            var count=counter+=1;
+            document.getElementById("x2").style.fontSize=count+"px"
+            if(count==40)
+            {
+                document.getElementById("x2").style.color="red"
+            }
+            if(count==60)
+            {
+                document.getElementById("x2").style.color="green"
+            }
+            if(count==80)
+            {
+                document.getElementById("x2").style.color="pink"
+            }
+            if(count==100)
+            {
+                document.getElementById("x2").style.color="blue"
+            }
+
+            if(count==110)
+            {
+                document.getElementById("x2").style.color="yellow"
+            }
+            if(count==120)
+            {
+                counter=10
+            }
+           
+        }
+    </script>
+</head>
+<body>
+    <div onmousemove="textzom()" id="x2" style="font-size: 20px; text-align: center;">
+        HAR HAR MAHADEV
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    //     function maxnum(rec_array)
+    //     {
+    //         var temp=rec_array[0];
+    //         for(var i=0;i<rec_array.length;i++)
+    //         {
+    //             if(rec_array[i]>=temp)
+    //             {
+    //                 temp=rec_array[i]
+    //             }
+    //         }
+    //         document.write("<br/> max num is :"+temp)
+    //     }
+    //     var num=[1,3,4,6,76,8,9,82];
+    //     maxnum(num);
+    //     var num=[1,3,4,6,76,8,9,,42];
+    //     maxnum(num);
+    //     var num=[1,3,4,6,76,8,9,,232];
+    //     maxnum(num);
+
+    //     function max(array)
+    //     {
+    //         var temp=array[0];
+    //         for(var i=0;i<array.length;i++)
+    //         {
+    //             if(array[i]>temp)
+    //             {
+    //                 temp=array[i]
+    //             }
+    //         }
+    //         return temp;
+    //     }
+    //    var maxnum=[1,53,5,6,245,35,9];
+    //    document.write("<br/> maximum num is: "+max(maxnum))
+
+       function Update(array,old,new_data)
+       {
+            var temp=false;
+            for(var i=0;i<array.length;i++)
+            {
+                if(array[i]==old)
+                {
+                    array[i]=new_data;
+                    temp=true;
+                }
+
+            }
+            if(temp==true)
+            {
+                for(var i=0;i<array.length;i++)
+                {
+                    document.write("<br/>"+array[i])
+                }
+            }
+            else
+            {
+                document.write("<br/> Your data Is Not Peresent In Old Data :"+old)
+            }
+       }
+       var num=[1,2,3,4,5,6,97,9,88];
+    //    var old_data=5;
+    //    var new_data=879;
+          var old_data=parseInt(prompt("enter a  old number"));
+          var new_data=parseInt(prompt("Enter a new number"));
+    //    Update(num,old_data,new_data);
+
+       
+    </script>
+</head>
+<body>
+    
+    <button onclick="Update(num,old_data,new_data)">update</button>
+</body>
+</html>

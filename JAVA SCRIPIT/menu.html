@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          max-width: 300px;
+          margin: auto;
+          text-align: center;
+          font-family: arial;
+          margin-left: 60%;
+          margin-top: 25%;
+          width: 80%;
+          background-color: black;
+        }
+        
+        .price {
+          color: grey;
+          font-size: 22px;
+        }
+        
+        .card button {
+          border: none;
+          outline: 0;
+          padding: 12px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+          font-size: 18px;
+        }
+        
+        .card button:hover {
+          opacity: 0.7;
+        }
+        img
+        {
+            height: 150px;
+        }
+        .fast
+        {
+            text-align: center;
+            font-size: 60px;
+            font-weight: 600;
+            text-transform: capitalize;
+            margin-top: 3%;
+        }
+        .name
+        {
+            font-size: 32px;
+            text-transform: capitalize;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        </style>
+        <script>
+            function food1()
+            {
+                var fast=parseInt(prompt("Enetr your Your choices"));
+                switch (fast)
+                {
+                    case 1:
+                            alert("Press H for half plate & Press f for full plate")
+                            var choice=prompt("enter Your choice");
+                            if(choice=="h" || choice=="H")
+                            {
+                                var qty=parseInt(prompt("for Half plate 100 For each plates How Many do you wants ?"));
+                                var total=qty*100
+
+                                alert("you have to "+total)
+                            }
+                            if(choice=="f" || choice=="F")
+                            {
+                                var qty=parseInt(prompt("For Full plates 150 For each Plates How many do you wants ?"));
+                                var total=qty*150;
+
+                                alert("you have to "+total)
+                            }
+                     break;        
+                }
+            }
+            function food3()
+            {
+                var fas=parseInt(prompt("Enter Your Choices"));
+                switch(fas)
+                {
+                    case 1:
+                            alert("Press H for Half Plate & f for full Plates ")
+                            var choice=prompt("Enter Your Choices")
+                            if(choice=="H" || choice=="h")
+                            {
+                                var qty=parseInt(prompt("For Half Plate Momes 60 rupess"));
+                                var total=qty*60
+
+                                alert("Your Price Is "+ total)
+                            }
+                            if(choice=="f" || choice=="F")
+                            {
+                                var qty=parseInt(prompt("For Full Plates Momes 120 Rupess"));
+                                var total=qty*120;
+
+                                alert("Your Price is "+total+"Rs")
+                            }
+                    break;
+                }
+            }
+            function food2()
+            {
+                var go=parseInt(prompt("Enter your Choice"));
+                switch(go)
+                {
+                    case 1:
+                            alert("press S for small & press M for medium & press L for large")
+                            var choice=prompt("Enter Your Drinks Size");
+                            if(choice=="M" || choice=="m")
+                            {
+                                var qty=parseInt(prompt("For Medium Size Glass 80Rs "));
+                                var total=qty*80;
+
+                                alert("Your Drink Price is "+total+"Rs")
+                            }
+                            if(choice=="s" || choice=="S")
+                            {
+                                var qty=parseInt(prompt("For Small Size Drinks 40 Rs"));
+                                var total=qty*40;
+
+                                alert("Your Drink Price is "+ total+"Rs")
+                            }
+                            if(choice=="l" || choice=="L")
+                            {
+                                var qty=parseInt(prompt("For Small Size Drinks 100 Rs"));
+                                var total=qty*100;
+
+                                alert("Your Drink Price is "+ total+"Rs")
+                            }
+                     break       
+                }
+            }
+            function food4()
+            {
+                var fas=parseInt(prompt("Enter Your Choices"));
+                switch(fas)
+                {
+                    case 1:
+                            alert("Press H for Half Plate & f for full Plates ")
+                            var choice=prompt("Enter Your Choices")
+                            if(choice=="H" || choice=="h")
+                            {
+                                var qty=parseInt(prompt("For Half Plate  110 rupess"));
+                                var total=qty*110
+
+                                alert("Your Price Is "+ total)
+                            }
+                            if(choice=="f" || choice=="F")
+                            {
+                                var qty=parseInt(prompt("For Full Plates Momes 220 Rupess"));
+                                var total=qty*220;
+
+                                alert("Your Price is "+total+"Rs")
+                            }
+                    break;
+                }
+            }
+            function food5()
+            {
+                var fas=parseInt(prompt("Enter Your Choices"));
+                switch(fas)
+                {
+                    case 1:
+                            alert("Press H for Half Plate & f for full Plates ")
+                            var choice=prompt("Enter Your Choices")
+                            if(choice=="H" || choice=="h")
+                            {
+                                var qty=parseInt(prompt("For Half Plate  50 rupess"));
+                                var total=qty*50
+
+                                alert("Your Price Is "+ total)
+                            }
+                            if(choice=="f" || choice=="F")
+                            {
+                                var qty=parseInt(prompt("For Full Plates Momes 110 Rupess"));
+                                var total=qty*110;
+
+                                alert("Your Price is "+total+"Rs")
+                            }
+                    break;
+                }
+            }
+            function food6()
+            {
+                var fas=parseInt(prompt("Enter Your Choices"));
+                switch(fas)
+                {
+                    case 1:
+                            alert("Press H for Half Plate & f for full Plates ")
+                            var choice=prompt("Enter Your Choices")
+                            if(choice=="H" || choice=="h")
+                            {
+                                var qty=parseInt(prompt("For Half Plate  90 rupess"));
+                                var total=qty*90
+
+                                alert("Your Price Is "+ total)
+                            }
+                            if(choice=="f" || choice=="F")
+                            {
+                                var qty=parseInt(prompt("For Full Plates Momes 160 Rupess"));
+                                var total=qty*160;
+
+                                alert("Your Price is "+total+"Rs")
+                            }
+                    break;
+                }
+            }
+            function food7()
+            {
+                var fas=parseInt(prompt("Enter Your Choices"));
+                switch(fas)
+                {
+                    case 1:
+                            alert("Press H for Half Plate & f for full Plates ")
+                            var choice=prompt("Enter Your Choices")
+                            if(choice=="H" || choice=="h")
+                            {
+                                var qty=parseInt(prompt("For Half Plate  100 rupess"));
+                                var total=qty*100
+
+                                alert("Your Price Is "+ total)
+                            }
+                            if(choice=="f" || choice=="F")
+                            {
+                                var qty=parseInt(prompt("For Full Plates  220 Rupess"));
+                                var total=qty*220;
+
+                                alert("Your Price is "+total+"Rs")
+                            }
+                    break;
+                }
+            }
+            function food8()
+            {
+                var go=parseInt(prompt("Enter your Choice"));
+                switch(go)
+                {
+                    case 1:
+                            alert("press S for small & press M for medium & press L for large")
+                            var choice=prompt("Enter Your Pizza Size");
+                            if(choice=="M" || choice=="m")
+                            {
+                                var qty=parseInt(prompt("For Medium Size Pizza 140Rs "));
+                                var total=qty*140;
+
+                                alert("Your Pizza Price is "+total+"Rs")
+                            }
+                            if(choice=="s" || choice=="S")
+                            {
+                                var qty=parseInt(prompt("For Small Size Pizza 80 Rs"));
+                                var total=qty*80;
+
+                                alert("Your Pizza Price is "+ total+"Rs")
+                            }
+                            if(choice=="l" || choice=="L")
+                            {
+                                var qty=parseInt(prompt("For Large Size Pizza 300 Rs"));
+                                var total=qty*300;
+
+                                alert("Your Pizza Price is "+ total+"Rs")
+                            }
+                     break       
+                }
+            }
+        </script>
+  </head>
+  <body style="background-color: #000; color: aliceblue;">
+    <table border="0px" style="margin-left: 10%;">
+        <tr>
+            <div class="fast">
+                Fast food center
+            </div>
+            <td>
+                <div class="card">
+                    <img src="assets/gallery/sanwitch..avif" alt="Denim Jeans" style="width:100%">
+                    <div class="name">sandwitch</div>
+                    <input type="submit" value="Oder" onclick="food1()">
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <img src="assets/gallery/cold drinks.avif" alt="Denim Jeans" style="width:100%">
+                    <div class="name">Cold Drinks</div>
+                    <input type="submit" value="Oder" onclick="food2()">
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <img src="assets/gallery/moms.avif" alt="Denim Jeans" style="width:100%">
+                    <div class="name">Momes</div>
+                    <input type="submit" value="Oder" onclick="food3()">
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <img src="assets/gallery/pasta.avif" alt="Denim Jeans" style="width:100%">
+                    <div class="name">Pasta</div>
+                    <input type="submit" value="Oder" onclick="food4()">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="card">
+                    <img src="assets/gallery/noddels.avif" alt="Denim Jeans" style="width:100%">
+                    <div class="name">Noodles</div>
+                    <input type="submit" value="Oder" onclick="food5()">
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <img src="assets/gallery/sanwitch..avif" alt="Denim Jeans" style="width:100%">
+                    <div class="name">sandwitch</div>
+                    <input type="submit" value="Oder" onclick="food6()">
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <img src="assets/gallery/moms.avif" alt="Denim Jeans" style="width:100%">
+                    <div class="name">Momoes</div>
+                    <input type="submit" value="Oder" onclick="food7()">
+                </div>
+            </td>
+            <td>
+                <div class="card">
+                    <img src="assets/gallery/pizza.avif" alt="Denim Jeans" style="width:100%">
+                    <div class="name">Pizza</div>
+                    <input type="submit" value="Oder" onclick="food8()">
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

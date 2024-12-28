@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      
+            // let x=1;
+            // while(x<=8)
+            // {
+            //     document.write(x+"<br/>")
+            //     x++;
+            // }
+
+            // document.write("<br/>")
+            // let i=10;
+            // while(i>=1)
+            // {
+            //     document.write(i+"<br/>")
+            //     i--;
+            // }
+                
+            // // for loop
+            // document.write("<br/>")
+            // for(var p=1;p<=10;p++)
+            // {
+            //     document.write("<br/>"+p)
+            // }
+
+            // document.write("<br/>")
+            // for(i=10;i>=1;i--)
+            // {
+            //     document.write("<br/>"+i)
+            // }
+            // document.write("<br/>")
+            function count()
+            {
+                // let num=parseInt(prompt("Enter a Number"))
+                // for( let i=1;i<=10;i++)
+                // {
+                //     document.write(num*i+"<br>")
+                // }
+                let x=1;
+                let num=parseInt(prompt("enter a number"));
+                while(x<=10)
+                {
+                    document.write(num*x+"<br/>")
+                    x++;
+                }
+            }
+            function table()
+            {
+                 let num=parseInt(prompt("Enter a number"));
+                // if(num>=2 && num<=20)
+                // {
+                //     for(let x=1;x<=10;x++)
+                //     {
+                //         document.write( num+"*"+x+"="+num*x+"<br/>")
+                //     }
+                // }
+                // else
+                // {
+                //     document.write("INVALID DATA !")
+                // }
+                
+                x=1;
+                while(x<=10)
+                {
+                    if(num>=2 && num<=20)
+                    {
+                        document.write(num*x+"<br/>");
+                        x++;
+                    }
+                    else
+                    {
+                        document.write("INVALID DATA !")
+                    }
+                }
+            }
+            function kon()
+            {
+                let num=parseInt(document.getElementById("fu").value);
+                if(num>=2 && num<=20)
+                {
+                    for(let x=1;x<=10;x++)
+                    {
+                        document.getElementById("ans").innerHTML=num*x+"<br/>"
+                        // document.write(num*x+"<br/>")
+                    }
+                }
+            }
+            function sum()
+            {
+                var num=parseInt(prompt("Enter a Number"));
+                var x=1
+                while(num>0)
+                {
+                    x=x+num
+                    num--;
+                }
+                document.write(x)
+            }
+    </script>
+</head>
+<body>
+    <input type="submit" value="Table of any number" onclick="count()" style="margin-bottom: 5%;">
+    <br/>
+    <input type="submit" value="Table 2 to 20" onclick="table()">
+    <br/>
+    <input type="text" name="Enter a Number" id="fu">
+    <br/>
+    <input type="submit" value="Table of any number" onclick="kon()" style="margin-bottom: 5%; " id="go">
+    <br/>
+    <input type="submit" value="sum" onclick="sum()">
+    <div id="ans">
+
+    </div>
+</body><!-- 2345
+    =>14 -->
+</html>
+//loop?

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .text1
+        {
+            width: 80%;
+            height: 28px;
+            margin-left: 10%;
+            margin-top: 5%;
+        }
+         .btn1
+        {
+            font-family: Comic Sans MS;
+            width: 81.5%;
+            height: 37px;
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-bottom: 5%;
+            font-size: 20px;
+            background-color: rgb(115, 172, 115);
+            border-radius: 0.2rem;
+            border-width: 0px;
+            cursor: pointer;
+        }
+        .btn1:hover
+        {
+            background-color: #f44336;
+            color: white;
+        }
+        .text
+        {
+            margin-bottom: -4%;
+            margin-left: 10%;
+            text-transform: capitalize;
+            margin-top: 6%;
+        }
+        .ques
+        {
+            text-align: center;
+            text-transform: capitalize;
+            margin-top: 3%;
+        }
+        .ans
+        {
+            margin-left: 10%;
+            margin-bottom: 3%;
+        }
+        table
+        {
+            -webkit-box-shadow: 15px 14px 18px 1px rgba(0,0,0,0.68);
+            -moz-box-shadow: 15px 14px 18px 1px rgba(0,0,0,0.68);
+            box-shadow: 15px 14px 18px 1px rgba(0,0,0,0.68);
+            font-family: Comic Sans MS;
+        }
+        .mar
+        {
+            margin-left: 15%;
+        }
+    </style>
+    <script>
+            function marks()
+            {
+                var phy=parseInt(document.getElementById("p").value);
+                var chem=parseInt(document.getElementById("q").value);
+                var math=parseInt(document.getElementById("r").value);
+                var total=phy+chem+math
+                var avg=total/3
+
+                if(avg>=1 && avg<30)
+                {   document.getElementById("res1").innerHTML="Opps!"
+                    document.getElementById("res").innerHTML="You Are Fail"
+                }
+                else if(avg>=30 && avg<45)
+                {
+                    document.getElementById("res").innerHTML="You Got a III Division"
+                }
+                else if(avg>=45 && avg<60)
+                {
+                    document.getElementById("res").innerHTML="You Got a II Division"
+                }
+                else if(avg>=60 && avg<100)
+                {
+                    document.getElementById("resu").innerHTML="Congrats!"
+                    document.getElementById("res").innerHTML="You Got a I Division"
+                }else
+                {
+                    
+                    document.getElementById("res").innerHTML="Error Invalid Data"
+                }
+            }
+        
+    </script>
+</head>
+<body>
+    <table border="1px" align="center" width="45%" style="margin-top: 5%;">
+        <tr>
+            <td>
+                <div class="ques">
+                    Marks calculater
+                </div>
+                <div class="text">
+                    Enter Physics Number
+                </div>
+                <input type="text"
+                 name="" id="p" class="text1">
+                <div class="text">
+                    Enter Maths Number
+                </div>
+                <input type="text" name="" id="q" class="text1">
+                <div class="text">
+                    Enter Chemistry Number
+                </div>
+                <input type="text" name="" id="r" class="text1">
+                <input type="submit" value="calculate Marks" class="btn1" onclick="marks()">
+                
+                <div id="res1" class="mar"></div>
+                <div id="resu" class="mar"></div>
+                <div id="res" class="mar"></div>
+                
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

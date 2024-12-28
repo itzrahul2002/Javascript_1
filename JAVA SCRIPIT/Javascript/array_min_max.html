@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function maxnum()
+        {
+            var num=[21,3,54,67,89,2,765,46,99];
+            var i=0;
+            var temp=num[0];
+
+            while(i<num.length)
+            {
+                if(num[i]>=temp)
+                {
+                    temp=num[i];
+                }
+                i++;
+            }
+            document.write("<br/> Maximum Number is"+temp)
+        }
+
+        function minnum()
+        {
+            var num=[32,45,53,65,32,88,232,9,0,4,8];
+            var i=0;
+            var temp=num[0];
+
+            while(i<num.length)
+            {
+                if(num[i]<=temp)
+                {
+                    temp=num[i];
+                }
+                i++;
+            }
+            document.write("<br/> Minimum Number is "+temp)
+        }
+    </script>
+</head>
+<body>
+    <input type="submit" value="Maximum" onclick="maxnum()">
+    <br/>
+    <input type="submit" value="Minumum" onclick="minnum()">
+</body>
+</html>

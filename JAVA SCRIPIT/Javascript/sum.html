@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum()
+        {
+            let num=[32,30,8,30,10,40,50];
+            let sum=0;
+            for(let i=0;i<num.length;i++)
+            {
+                sum=sum+num[i];
+            }
+            document.write(sum)
+        }
+
+        function rev()
+        {
+            let name=["raj","rahul","mahadev","thor"]
+            for(let i=name.length-1;i>=0;i--)
+            {
+                document.write("<br/>"+name[i])
+            }
+        }
+        function count()
+        {
+            let num=[32,44,-53,5,4,23,66,100]
+            let odd=0;
+            let even=0;
+            let pos=0;
+            let neg=0;
+
+            for(i=0;i<num.length;i++)
+            {
+                if(num[i]>0)
+                {
+                    pos++;
+                }
+                else
+                {
+                    neg++;
+                }
+                if(num[i]%2==0)
+                {
+                    even++;
+                }
+                else
+                {
+                    odd++;
+                }
+                
+            }
+                document.write("<br/> Total positive Number is :" +pos);
+                document.write("<br/> Total Negative Number is :" +neg);
+                document.write("<br/> Total Odd Number is :" +odd);
+                document.write("<br/> Total Evens Number is :" +even);
+        }
+    </script>
+
+</head>
+<body>
+    <input type="submit" value="add" onclick="sum()">
+    <br>
+    <input type="submit" value="reverse" onclick="rev()">
+    <br>
+    <input type="submit" value="Count All" onclick="count()">
+</body>
+</html>

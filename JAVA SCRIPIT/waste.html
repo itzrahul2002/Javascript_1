@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                .head
+        {
+            margin-left: 10%;
+            text-transform: capitalize;
+            font-size: 30px;
+            font-weight: 600;
+            text-align: center;
+            margin: 2%;
+        }
+        .lable
+        {
+            width: 20%;
+            text-transform: capitalize;
+            font-size: 25px;
+        }
+        .box
+        {
+            width: 70%;
+            height: 30px;
+        }
+        .ans
+        {
+            width: 20%;
+        }
+        .btn
+        {
+            width: 60%;
+            height: 40px;
+            background-color: burlywood;
+            color: black;
+            font-size: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-left: 20%;
+            cursor: pointer;
+        }
+        font
+        {
+            color: red;
+        }
+    </style>
+    <script>
+        function validation()
+        {
+            var f_name=document.getElementById("f_name").value;
+            var f_name_len=f_name.length;
+            var m_name=document.getElementById("m_name").value;
+            var m_name_len=m_name.length;
+            var l_name=document.getElementById("l_name").value;
+            var l_name_len=l_name.length;
+            var mob_num=document.getElementById("mob_number").value;
+            var mob_num_p = /^[1-9]{1}[0-9]{9}$/; 
+            var e_mail=document.getElementById("email_id").value;
+            var e_mail_p="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
+            // a password must be six characters including one uppercase letter, one special character and alphanumeric characters
+            var pass=document.getElementById("password").value;
+            var pass_len=password.length;
+            // var pass_p="(?=^.{6,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$";
+            var pass=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+
+            if(f_name=="")
+            {
+                document.getElementById("a_f_name").innerHTML="Enter A First Name ?";
+                return false;
+            }
+            else if(f_name_len<=2)
+            {
+                document.getElementById("a_f_name").innerHTML="First Name Must be 3 Letter ?";
+                return false;
+            }
+            else
+            {
+                // alert("Next")
+                document.getElementById("m_name").focus();
+                document.getElementById("a_f_name").innerHTML=""
+            }
+
+            if(m_name=="")
+            {
+                document.getElementById("a_m_name").innerHTML="Enter A Middle Name ?"
+                return false;
+            }
+            else if(m_name_len<=3)
+            {
+                document.getElementById("a_m_name").innerHTML="Middle Name Must be 4 Letter ?"
+                return false;
+            }
+            else
+            {
+                document.getElementById("l_name").focus();
+                document.getElementById("a_m_name").innerHTML="";
+            }
+            if(l_name=="")
+            {
+                document.getElementById("a_l_name").innerHTML="Enter a last Name ?"
+                return false;
+            }
+            else if(l_name_len<=3)
+            {
+                document.getElementById("a_l_name").innerHTML=" Last Name Must be 4 Letter ?"
+                return false;
+            }
+            else
+            {
+                document.getElementById("age").focus(); 
+                document.getElementById("a_l_name").innerHTML="";
+                // alert("next")
+            }
+            
+            if(document.getElementById('age').selectedIndex==0)
+            {
+                document.getElementById('a_age').innerHTML="Please select  Your age";
+                    return false;	
+            }
+            else
+            {
+                
+                document.getElementById("gender").focus();
+                document.getElementById("a_age").innerHTML="";
+            }
+            if(gender[0].checked==true)
+            {
+                document.getElementById("mob_number").focus();
+                document.getElementById("a_gender").innerHTML=""
+            }
+            else if(gender[1].checked==true)
+            {
+                document.getElementById("mob_number").focus();
+                document.getElementById("a_gender").innerHTML=""
+            }
+            else
+            {
+                document.getElementById("a_gender").innerHTML="Please select a Gender";
+                return false;
+            }
+            if(mob_num=="")
+            {
+                document.getElementById("a_mob_number").innerHTML="PLease Enter Moblie Number ?";
+                return false;
+            }
+            else if(!mob_num.match(mob_num_p))
+            {
+                document.getElementById("a_mob_number").innerHTML="PLease Enter A valid Moblie Number ?"
+                return false;
+            }
+            else
+            {
+                document.getElementById("email_id").focus();
+                document.getElementById("a_mob_number").innerHTML=""
+            }
+            if(e_mail=="")
+            {
+                document.getElementById("a_email_id").innerHTML="Please Enter A Email ID !"
+                return false;
+            }
+            else if(!e_mail.match(e_mail_p))
+            {
+                document.getElementById("a_email_id").innerHTML="PLease Enter A Valid Email ID !"
+                return false;
+            }
+            else
+            {
+                document.getElementById("password").focus();
+                document.getElementById("a_email_id").innerHTML=""
+            }
+            if(pass=="")
+            {
+                document.getElementById("a_password").innerHTML="Please enter  a Password ?";
+                return false;
+            }
+            else if(pass_len<8)
+            {
+                document.getElementById("a_password").innerHTML="PASSWORD Must be A least 8 charater !"
+                return false;
+            }
+            else if(pass_len>12)
+            {
+                document.getElementById("a_password").innerHTML=" PASSWORD Must be Less than 12 Charater !"
+                return false;
+            }
+            else if(!pass.match(pass_p))
+            {
+                document.getElementById("a_password").innerHTML="a password must be eight characters including one uppercase letter, one special character and alphanumeric characters";
+                return false;
+            }
+            else
+            {
+                alert("NEXT")
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <form method="post" onsubmit="return validation()">
+        <table border="1"; align="center" width="60%">
+            <tr>
+                <td colspan="3">
+                    <div class="head">
+                        Form Validation
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="lable"><label for="">First name</label></td>
+                <td><input type="text" name="" id="f_name" class="box"></td>
+                <td class="ans"><font id="a_f_name"></font></td>
+            </tr>
+            <tr>
+                <td class="lable"><label for="">Middle name</label></td>
+                <td><input type="text" name="" id="m_name" class="box"></td>
+                <td class="ans"><font id="a_m_name"></font></td>
+            </tr>
+            <tr>
+                <td class="lable"><label for="">last name</label></td>
+                <td><input type="text" name="" id="l_name" class="box"></td>
+                <td class="ans"><font id="a_l_name"></font></td>
+            </tr>
+            <tr>
+                <td><label class="lable">Selecet Your Age</label></td>
+                <td>
+                    <select id="age" class="box">
+                        <option>----Select Age----</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                    </select>
+                    <td class="ans"><font id="a_age"></font></td>
+                </td>
+            </tr>
+            <tr>
+                <td class="lable"><label for="">last name</label></td>
+                <td>
+                    <input type="radio" name="gender" id="gender"> Male
+                    <input type="radio" name="gender" id="gender"> Female
+                </td>
+                <td class="ans"><font id="a_gender"></font></td>
+            </tr>
+            <tr>
+                <td class="lable"><label for="">Moblie Number</label></td>
+                <td><input type="text" name="" id="mob_number" class="box"></td>
+                <td class="ans"><font id="a_mob_number"></font></td>
+            </tr>
+            <tr>
+                <td class="lable"><label for="">Email ID</label></td>
+                <td><input type="text" name="" id="email_id" class="box"></td>
+                <td class="ans"><font id="a_email_id"></font></td>
+            </tr>
+            <tr>
+                <!-- a password must be six characters including one uppercase letter, one special character and alphanumeric characters -->
+                <td class="lable"><label for="">Password</label></td>
+                <td><input type="text" name="" id="password" class="box"></td>
+                <td class="ans"><font id="a_password"></font></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="submit" value="Save" class="btn">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </table>
+</body>
+</html>

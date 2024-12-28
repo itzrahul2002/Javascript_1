@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function oder()
+        {
+            var num=parseInt(prompt("Enter a Number"));
+            var i=1;
+            while(i<=num)
+            {
+                var j=1;
+                while(j<=i)
+                {
+                    document.write(j)
+                    j++;
+                }
+                document.write("<br/>");
+                i++;
+            }
+        }
+        function star()
+        {
+            var num=parseInt(prompt("Enter A Number"));
+            var x=1;
+            while(x<=num)
+            {
+                var y=1;
+                while(y<=x)
+                {
+                    document.write("*")
+                    y++;
+                }
+                document.write("<br/>")
+                x++;
+            }
+        }
+        function revoder()
+        {
+            var num=parseInt(prompt("Enter A number"));
+            var x=1;
+            while(x<=num)
+            {
+                var y=num;
+                while(y>=x)
+                {
+                    document.write(y);
+                    y--;
+                }
+                document.write("<br/>");
+                x++;
+            }
+        }
+        function table()
+        {
+            var row=parseInt(prompt("Enter a row"));
+            var col=parseInt(prompt("enter a col num"));
+            var x=1;
+            while(x<=row)
+            {
+                document.write("<br/>");
+            
+                x++;
+                var y=1
+                while(y<=col)
+                {
+                    document.write(y)
+                    y++;
+                }
+                
+            }
+        }
+        function row_col()
+        {
+            var row=parseInt(document.getElementById("row").value);
+            var col=parseInt(document.getElementById("col").value);
+            x=1;
+            while(x<=row)
+            {
+                document.write("<br/>");
+                y=1;
+                while(y<=col)
+                {
+                    document.write("*");
+                    y++;
+                }
+                x++;
+            }
+        }
+        function same()
+        {
+            var row=parseInt(prompt("Enter a Number"));
+            x=1;
+            while(x<=row)
+            {
+                // document.write("<br/>");
+                y=1;
+                while(y<=row)
+                {
+                    // document.write("*");/
+                    document.getElementById("res").innerHTML="*"
+                    y++;
+                }
+                x++;
+            }
+        }
+        function sqaure(rows)
+        {
+                for (i=1;i<=rows;i++){
+
+                if (i==1||i==rows)
+                    for (j=1;j<=rows;j++)document.write("*");{
+                    
+                    for (j = 1; j <= rows; j++){
+                    if (j==1||j==rows)
+                    {
+                        document.write("*");
+                    }
+                    else 
+                        document.write("  ");
+                }    
+                }
+            }
+                document.write("<br>");
+        }
+        sqaure(5);
+    </script>
+    <style>
+        .btn
+        {
+            margin-bottom: 5%;
+            width: 40%;
+            height: 40px;
+            font-size: 30px;
+        }
+        .btn2
+        {
+            margin-bottom: 5%;
+            width: 30.5%;
+            height: 40px;
+            font-size: 30px;
+        }
+        .box
+        {
+            margin-bottom: 1%;
+            width: 30%;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <input type="submit" value="Enter" onclick="oder()" class="btn">
+    <br/>
+    <input type="submit" value="Click" onclick="star()" class="btn">
+    <br/>
+    <input type="submit" value="Press" onclick="revoder()" class="btn">
+    <br/>
+    <input type="submit" value="Row_col" onclick="table()" class="btn">
+    <br/>
+    <input type="text" name="" id="row" placeholder="Enter A Row Number" class="box">
+    <br/>
+    <input type="text" name="" id="col" placeholder="Enter A column Number" class="box">
+    <br/>
+    <input type="submit" value="Enter" onclick="row_col()" class="btn2">
+    <br/>
+    <input type="submit" value="Row_Col_Same" onclick="same()" class="btn">
+    <div id="res"></div>
+     <button onclick="sqaure()">Suqare</button>
+</body>
+</html>
+1 2 3 4 5
+1       5
+1       5
+1       5
+1 2 3 4 5

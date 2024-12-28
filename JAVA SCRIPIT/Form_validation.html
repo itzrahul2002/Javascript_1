@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        .head
+        {
+            margin-left: 10%;
+            text-transform: capitalize;
+            font-size: 30px;
+            font-weight: 600;
+            text-align: center;
+            margin: 2%;
+        }
+        .lable
+        {
+            width: 20%;
+            text-transform: capitalize;
+            font-size: 25px;
+        }
+        .box
+        {
+            width: 70%;
+            height: 30px;
+        }
+        .ans
+        {
+            width: 20%;
+        }
+        .btn
+        {
+            width: 200%;
+            height: 40px;
+            margin-left: 150%;
+            background-color: burlywood;
+            color: red;
+            font-size: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 5%;
+        }
+        font
+        {
+            color: red;
+        }
+    </style>
+    <script>
+        function validation()
+        {
+            var f_name=document.getElementById("f_name").value;
+            var f_name_len=f_name.length;
+            var m_name=document.getElementById("m_name").value;
+            var m_name_len=m_name.length;
+            var l_name=document.getElementById("l_name").value;
+            var l_name_len=l_name.length;
+            if(f_name=="")
+            {
+                document.getElementById("a_f_name").innerHTML="Enter A First Name ?";
+                return false;
+            }
+            else if(f_name_len<=2)
+            {
+                document.getElementById("a_f_name").innerHTML="First Name Must be 3 Letter ?";
+                return false;
+            }
+            else
+            {
+                // alert("Next")
+                document.getElementById("m_name").focus();
+                document.getElementById("a_f_name").innerHTML=""
+            }
+
+            if(m_name=="")
+            {
+                document.getElementById("a_m_name").innerHTML="Enter A Middle Name ?"
+                return false;
+            }
+            else if(m_name_len<=3)
+            {
+                document.getElementById("a_m_name").innerHTML="Middle Name Must be 4 Letter ?"
+                return false;
+            }
+            else
+            {
+                document.getElementById("l_name").focus();
+                document.getElementById("a_m_name").innerHTML=""
+            }
+            if(l_name=="")
+            {
+                document.getElementById("a_l_name").innerHTML="Enter a last Name ?"
+                return false;
+            }
+            else if(l_name_len<=3)
+            {
+                document.getElementById("a_l_name").innerHTML=" Last Name Must be 4 Letter ?"
+                return false;
+            }
+            else
+            {
+                document.getElementById("age").focus(); 
+                document.getElementById("a_l_name").innerHTML=""
+                // alert("next")
+            }
+            
+            if(document.getElementById("age").selectedIndex==0);
+            {
+                document.getElementById("a_age").innerHTML="Please Select age ?";
+                return false;
+            }
+            else
+            {
+                alert("next")
+            }
+           
+        }
+    </script>
+</head>
+  <body>
+        <form method="post" onsubmit="return validation()">
+            <table border="1"; align="center" width="60%">
+                <tr>
+                    <td colspan="3">
+                        <div class="head">
+                            Form Validation
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lable"><label for="">First name</label></td>
+                    <td><input type="text" name="" id="f_name" class="box"></td>
+                    <td class="ans"><font id="a_f_name"></font></td>
+                </tr>
+                <tr>
+                    <td class="lable"><label for="">Middle name</label></td>
+                    <td><input type="text" name="" id="m_name" class="box"></td>
+                    <td class="ans"><font id="a_m_name"></font></td>
+                </tr>
+                <tr>
+                    <td class="lable"><label for="">last name</label></td>
+                    <td><input type="text" name="" id="l_name" class="box"></td>
+                    <td class="ans"><font id="a_l_name"></font></td>
+                </tr>
+                <tr>
+                    <td><label> Your Age</label></td>
+                    <td>
+                        <select id="age">
+                            <option>----Select Age----</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                        </select>
+                        <td class="ans"><font id="a_age"></font></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Save" class="btn">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

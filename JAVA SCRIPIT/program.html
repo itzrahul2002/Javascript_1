@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                .text1
+        {
+            width: 80%;
+            height: 28px;
+            margin-left: 10%;
+            margin-top: 5%;
+        }
+        .btn1
+        {
+            width: 81.5%;
+            height: 33px;
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-bottom: 5%;
+        }
+        .text
+        {
+            margin-bottom: -4%;
+            margin-left: 10%;
+            text-transform: capitalize;
+            margin-top: 6%;
+        }
+        .ques
+        {
+            text-align: center;
+            text-transform: capitalize;
+            margin-top: 3%;
+        }
+        .ans
+        {
+            margin-left: 10%;
+            margin-bottom: 3%;
+        }
+        .resi
+        {
+            margin-left: 10%;
+        }
+    </style>
+    <script>
+           function maxfour()
+            {
+                var w=parseInt(document.getElementById("w").value);
+                var x=parseInt(document.getElementById("x").value);
+                var y=parseInt(document.getElementById("y").value);
+                var z=parseInt(document.getElementById("z").value);
+
+                if(w>x && w>y && w>z)
+                {
+                    document.getElementById("res").innerHTML="Maximum Number is"+w
+                }
+                else if(x>w && x>y && x>z)
+                {
+                    document.getElementById("res").innerHTML="Maximum Number is"+x
+                }
+                else if(y>w && y>x && y>z)
+                {
+                    document.getElementById("res").innerHTML="Maximum Number is"+y
+                }
+                else
+                {
+                    document.getElementById("res").innerHTML="Maximum Number is"+z
+                }
+            }
+    </script>
+</head>
+<body>
+    <table border="1px" align="center" width="45%">
+        <tr>
+            <td>
+                <div class="ques">
+                    find maximum of four number
+                </div>
+                <div class="text">
+                    enter first number
+                </div>
+                <input type="text" name="" id="w" class="text1">
+                <div class="text">
+                    enter second number
+                </div>
+                <input type="text" name="" id="x" class="text1">
+                <div class="text">
+                    enter third number
+                </div>
+                <input type="text" name="" id="y" class="text1">
+                <div class="text">
+                    enter fourth number
+                </div>
+                <input type="text" name="" id="z" class="text1">
+                <input type="submit" value="Find Maximum Of Four Numbers" class="btn1" onclick="maxfour()">
+
+                <div id="res" class="resi"></div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

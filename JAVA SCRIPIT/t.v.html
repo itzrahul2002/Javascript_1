@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function panner()
+    {  
+        var pan=parseInt(prompt("Enter your choice"));
+        switch(pan)
+        {
+            case 1: 
+                
+                alert("Press h/H for plat or f/F for full plat panner tikka");
+                
+                var choice=prompt("Enter a choice ?"); 
+                if(choice=='h' || choice=='H')
+                {
+                    var qty=parseInt(prompt("100 for half plat how many plates do you wnat ?"))
+                    var total=100*qty;
+                    alert("You have to "+total)
+                }
+
+                if(choice=='f' || choice=='F')
+                {
+                    var qty=parseInt(prompt("150 for full plat how many plates do you wnat ?"))
+                    var total=150*qty;
+                    alert("You have to "+total)
+                }
+
+            break;
+            case 2:
+                alert("press H for half Plate & f for full plate");
+                var choice=prompt("enter you choice ?")
+                if(choice=="h" || choice=="H")
+                {
+                    var qty=parseInt(prompt("per plates 80 rupess"));
+                    var total=qty*80;
+
+                    alert("total bill is "+total)
+                }
+                if(choice=="f" || choice=="F")
+                {
+                    var qty=parseInt(prompt("each plate 130 rupess"));
+                    var total=qty*130;
+
+                    document.write("you have to" + total)
+                }
+            break;
+            case 3:
+                alert("roll for h  for half plates");
+                var choice=prompt("enter your choice");
+                if(choice=="h" || choice=="H")
+                {
+                    var qty=parseInt(prompt("90 for each plats"));
+                    var total=qty+90;
+
+                    alert("you have to "+ total)
+                }
+                if(choice=="f" || choice=="F")
+                {
+                    var qty=parseInt(prompt("each plates 170"));
+                    var total=qty*170;
+
+                    alert("you have to"+total)
+                }
+            break;
+            case 4:
+                alert("for half plates press h & full for press f");
+                var choice=prompt("enter your choice")
+                if(choice=="h" || choice=="H")
+                {
+                    var qty=parseInt(prompt("for each plates 80"));
+                    var total=qty*80;
+                    var dis=total*5/80;
+                    var aft_dis=total-dis;
+
+                    alert("you have to "+ total)
+                    alert(" discounnt of 5%")
+                    alert("after discount of 5 %"+ aft_dis)
+                }
+                if(choice=="f" || choice=="F")
+                {
+                    var qty=parseInt(prompt("each plates 150"));
+                    var total=qty*150;
+                    var dis=total*10/80;
+                    var aft_dis=total-dis;
+
+                    alert("you have to "+ total)
+                    alert(" discounnt of 10%");
+                    alert("after discount of 10 %"+ aft_dis);
+                    alert("after discount of 10 %"+ total+aft_dis)
+                }
+            break;
+
+        }
+    }
+</script>
+<body>
+    <input type="submit" value="menu" onclick="panner()">
+</body>
+</html>

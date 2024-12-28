@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        .textbill
+        {
+            width: 80%;
+            height: 35px;
+            margin-left: 10%;
+            margin-top: 5%;
+        }
+        .btn
+        {
+            font-family: Comic Sans MS;
+            width: 81.5%;
+            height: 37px;
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-bottom: 5%;
+            font-size: 20px;
+            background-color: grey;
+            border-radius: 0.2rem;
+            border-width: 0px;
+            cursor: pointer;
+        }
+        .btn2
+        {
+            font-family: Comic Sans MS;
+            width: 81.5%;
+            height: 37px;
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-bottom: 5%;
+            font-size: 20px;
+            background-color: grey;
+            border-radius: 0.2rem;
+            border-width: 0px;
+            cursor: pointer;
+        }
+        .btn:hover
+        {
+            background-color: #f44336;
+            color: white;
+        }
+        .ans
+        {
+            margin-left: 10%;
+            margin-bottom: 5%;
+        }
+        .head
+        {
+            margin-left: 35%;
+            font-size: 30px;
+            margin-top: -5%;
+            
+        }
+        .name
+        {
+            margin-left: 10%;
+            margin-bottom: -4%;
+            text-transform: capitalize;
+            margin-top: 6%;
+        }
+        table
+        {
+            -webkit-box-shadow: 15px 14px 18px 1px rgba(0,0,0,0.68);
+            -moz-box-shadow: 15px 14px 18px 1px rgba(0,0,0,0.68);
+            box-shadow: 15px 14px 18px 1px rgba(0,0,0,0.68);
+            font-family: Comic Sans MS;
+            background-color: rgb(214, 231, 240);
+        }
+    </Style>
+    <script>
+        function bill()
+        {
+            var unit=parseInt(document.getElementById("box").value);
+            var total=unit*4;
+            document.getElementById("btn1").style.display="block";
+            if(unit>=1 && unit<=200)
+            {
+                
+                var tax_in_per=0;
+                var tax_in_rs=total*tax_in_per/100;
+                var b_amount=total+tax_in_rs;
+                document.getElementById("x1").innerHTML="Total Unit is :"+unit;
+                document.getElementById("x2").innerHTML="Total Amount Of bill Without TAX is :"+total+"rs";
+                document.getElementById("x3").innerHTML="TAX in Percantages is :"+tax_in_per+"%";
+                document.getElementById("x4").innerHTML="TAX in Rupess is :"+tax_in_rs+"rs";
+                document.getElementById("x5").innerHTML="Final Paybale Amount is :"+b_amount+"rs";
+            }
+            else if(unit>=200 && unit<=300)
+            {
+                var tax_in_per=2;
+                var tax_in_rs=total*tax_in_per/100;
+                var b_amount=total+tax_in_rs;
+                document.getElementById("x1").innerHTML="Total Unit is :"+unit;
+                document.getElementById("x2").innerHTML="Total Amount Of bill Without TAX is :"+total+"rs";
+                document.getElementById("x3").innerHTML="TAX in Percantages is :"+tax_in_per+"%";
+                document.getElementById("x4").innerHTML="TAX in Rupess is :"+tax_in_rs+"rs";
+                document.getElementById("x5").innerHTML="Final Paybale Amount is :"+b_amount+"rs";
+            }
+            else if(unit>=300 && unit<=400)
+            {
+                var tax_in_per=4;
+                var tax_in_rs=total*tax_in_per/100;
+                var b_amount=total+tax_in_rs;
+                document.getElementById("x1").innerHTML="Total Unit is :"+unit;
+                document.getElementById("x2").innerHTML="Total Amount Of bill Without TAX is :"+total+"rs";
+                document.getElementById("x3").innerHTML="TAX in Percantages is :"+tax_in_per+"%";
+                document.getElementById("x4").innerHTML="TAX in Rupess is :"+tax_in_rs+"rs";
+                document.getElementById("x5").innerHTML="Final Paybale Amount is :"+b_amount+"rs";
+            }
+            else if(unit>=400 && unit<=500)
+            {
+                var tax_in_per=6;
+                var tax_in_rs=total*tax_in_per/100;
+                var b_amount=total+tax_in_rs;
+                document.getElementById("x1").innerHTML="Total Unit is :"+unit;
+                document.getElementById("x2").innerHTML="Total Amount Of bill Without TAX is :"+total+"rs";
+                document.getElementById("x3").innerHTML="TAX in Percantages is :"+tax_in_per+"%";
+                document.getElementById("x4").innerHTML="TAX in Rupess is :"+tax_in_rs+"rs";
+                document.getElementById("x5").innerHTML="Final Paybale Amount is :"+b_amount+"rs";
+            }
+            else if(unit>500)
+            {
+                var tax_in_per=12;
+                var tax_in_rs=total*tax_in_per/100;
+                var b_amount=total+tax_in_rs;
+                document.getElementById("x1").innerHTML="Total Unit is :"+unit;
+                document.getElementById("x2").innerHTML="Total Amount Of bill Without TAX is :"+total+"rs";
+                document.getElementById("x3").innerHTML="TAX in Percantages is :"+tax_in_per+"%";
+                document.getElementById("x4").innerHTML="TAX in Rupess is :"+tax_in_rs+"rs";
+                document.getElementById("x5").innerHTML="Final Paybale Amount is :"+b_amount+"rs";
+            }
+            else
+            {
+                document.getElementById("x1").innerHTML="ERROR !"
+                document.getElementById("x2").innerHTML=
+                document.getElementById("x3").innerHTML="Invalid Unit Number"
+                document.getElementById("x4").innerHTML=
+                document.getElementById("x5").innerHTML="Please enter Valid Unit Number"
+                
+            }
+        }
+        function printbill()
+        {
+            document.getElementById("btn3").style.display="none"
+            document.getElementById("box").style.display="none"
+            document.getElementById("he").style.display="none"
+            document.getElementById("btn1").style.display="none"
+            document.getElementById("na").style.display="none"
+            document.getElementById("ans").innerHTML="Your Total Bill Of this Months"
+            print()
+            
+        }
+    </script>
+</head>
+<body>
+    <table border="1px" align="center" width="45%" height="500px" style="font-family: Comic Sans MS;;">
+        <tr>
+            <td>
+                <div class="head" id="he">
+                    Bill calculator
+                </div>
+                <div id="ans" style="margin-left: 10%; color: red; font-size: 30px;"></div>
+                <div class="name" id="na">
+                    enter the unit
+                </div>
+                <input type="text" name="" id="box" class="textbill">
+                <br>
+                <input type="submit" value="calculate Bill" onclick="bill()" class="btn" id="btn3">
+                <br>
+    
+                <div class="ans">
+                    <div id="x1"></div>
+                    <div id="x2"></div>
+                    <div id="x3"></div>
+                    <div id="x4"></div>
+                    <div id="x5"></div>
+                </div>
+                <div id="x6"></div>
+                <input type="button" value="print bill" id="btn1" onclick="printbill()" style="display: none;" class="btn2">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+

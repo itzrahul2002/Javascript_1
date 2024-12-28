@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function ob()
+      {
+        var person=
+        {
+            name:"RahulThakur",
+            Age:"20",
+            Phone:"9560994962",
+            gmail:"rahul@gamilcom"
+        }
+        // document.write(person)
+
+        // document.write(person.gmail);                                //<===<  dot rotation mehtod
+
+        document.write(person['name'])                                  //<===< bracket rotation 
+      }
+
+      let avengers=
+      {
+            name:"Tony Stark",
+            work:"Ironman",
+            age:"80",
+            power:"brain power",
+
+            frined:["bruce banner","hulk","70","muscles"],
+            
+            isavenger:true,
+            address:
+            {
+                city:"New york",
+                area:"very bad",
+                loction:
+                {
+                    pincode:"32908",
+                    country:"India",
+
+                }
+            }
+            
+      }
+      document.write(avengers.frined[1]);
+      document.write(avengers.city.country);
+      function find()
+      {
+            let name=parseInt(prompt("enter a number"));
+            let namelist="rahul"
+            let array=0;
+
+            for(let i=0; i<=namelist.length-1;i++)
+            {
+                if(name==namelist[i])
+                {
+                    
+                    array=1;
+                }
+            }
+            if(array==1)
+            {
+                alert("yes")
+            }
+            else
+            {
+                alert("no")
+            }
+      }
+    </script>
+</head>
+<body>
+    <button onclick="ob()">OBJECT</button>
+    <button onclick="find()">Find ddosddfdjsi</button>
+</body>
+</html>

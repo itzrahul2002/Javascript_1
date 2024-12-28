@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+      /* .card1:hover
+      {
+    
+          padding-left: 2%;
+          -webkit-box-shadow: 10px 10px 15px 1px rgba(0,0,0,0.50%);
+          -moz-box-shadow: 10px 10px 15px 1px rgba(0,0,0,0.50%);
+          box-shadow: 10px 10px 15px 1px rgba(0,0,0,0.650);
+       } */
+      .card1:hover
+      {
+          box-shadow: -1px -1px 4px 5px rgb(74 67 67 / 59%);
+          -webkit-box-shadow: -1px -1px 5px 2px rgb(74 67 67 / 59%);
+      } 
+    .row1
+      {
+          background-color: brown;
+          height: 30px;
+      }
+      .row1
+      {
+          background-color: brown;
+          height: 30px;
+      }
+      .cd2row1
+      {
+          background-color: goldenrod;
+          height: 30px;
+      }
+      .cd3row1
+      {
+          background-color: green;
+          height: 30px;
+      }
+      .row2
+      { 
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 22px;
+          color: maroon;
+          font-weight: 600;
+      }
+      .row3
+      {
+          color: white;
+          background-color: brown;
+          text-transform: capitalize;
+          padding-left: 5%;
+      }
+      .cd2row3
+      {
+          color: white;
+          background-color: goldenrod;
+          text-transform: capitalize;
+          padding-left: 5%;
+      }
+      .cd3row3
+      {
+          color: white;
+          background-color: green;
+          text-transform: capitalize;
+          padding-left: 5%;
+      }
+      .oder
+      {
+          margin-left: 20%;
+          text-transform: capitalize;
+          font-size: 30px;
+          margin-bottom: 3%;
+      }
+      .head1
+      {
+          text-align: center;
+          font-size: 30px;
+          font-weight: 600;
+      }
+      .head2
+      {
+          text-align: center;
+          font-size: 20px;
+          margin-top: -0.5%;
+      }
+      .head3
+      {
+          text-align: center;
+          font-size: 24px;
+          margin-top: 1%;
+          font-weight: 500s;
+      }
+      .name1
+      {
+          margin-left: -40%;
+          margin-bottom: 4%;
+      }
+      p
+      {
+          margin-bottom: 3%;
+          line-height: 30px;
+          
+      }
+      @media only screen and (max-width: 600px) 
+      {
+          
+      }
+    </style>
+
+    <script>
+      function mem1()
+      {
+          
+          var coin=1600;
+          var coin_amt=1800
+          var subtotal=1800;
+          var gst=coin_amt*18/100;
+          var total=coin_amt+gst
+          // alert(total)
+
+          document.getElementById("x1").innerHTML=coin;
+          document.getElementById("x2").innerHTML=coin_amt;
+          document.getElementById("gst_amt").innerHTML=gst;
+          document.getElementById("x3").innerHTML=subtotal
+          document.getElementById("x4").innerHTML=total;
+         
+      }
+      function mem2()
+      {
+          
+          var coin=3000;
+          var coin_amt=3000
+          var subtotal=3000;
+          var gst=coin_amt*18/100;
+          var total=coin_amt+gst
+          // alert(total)
+
+          document.getElementById("x1").innerHTML=coin;
+          document.getElementById("x2").innerHTML=coin_amt;
+          document.getElementById("gst_amt").innerHTML=gst;
+          document.getElementById("x3").innerHTML=subtotal
+          document.getElementById("x4").innerHTML=total;
+         
+      }
+      function mem3()
+      {
+          
+          var coin=5000;
+          var coin_amt=5000
+          var subtotal=5000;
+          var gst=coin_amt*18/100;
+          var total=coin_amt+gst
+          // alert(total)
+
+          document.getElementById("x1").innerHTML=coin;
+          document.getElementById("x2").innerHTML=coin_amt;
+          document.getElementById("gst_amt").innerHTML=gst;
+          document.getElementById("x3").innerHTML=subtotal
+          document.getElementById("x4").innerHTML=total;
+         
+      }
+    </script>
+  </head>
+  <body>
+    <!-- first card -->
+    <div class="container">
+      <div class="col-md-12 head1">
+        KONNECT GURU
+      </div>
+      <div class="head2">
+        Recharge coin and connect with students.
+      </div>
+      <div class="head3">
+        KONNECT GURU OFFERS
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 card1" onclick="mem1()">
+          <div class="row1">
+            
+          </div>
+          <div class="row2">
+            6 months(&#8377; 1800)
+          </div>
+          <div  class="row3">
+            <p>get 1600 coins to respond to enquiries <br>
+              get suggested to <br>students<br>
+              15 minutes advance alerts**<br>
+              free direct calla & messages form students<br>
+              choice to display your own phone <br>number
+            </p>
+          </div>
+        </div>
+          <!-- second card -->
+        <div class="col-md-4 card1" onclick="mem2()">
+          <div class="cd2row1">
+          </div>
+          <div class="row2">
+            6 months(&#8377; 1800)
+          </div>
+          <div  class="cd2row3">
+            <p>get 1600 coins to respond to enquiries <br>
+              get suggested to <br>students<br>
+              15 minutes advance alerts**<br>
+              free direct calla & messages form students<br>
+              choice to display your own phone <br>number
+            </p>
+          </div>
+      </div>
+        <!-- Third card -->
+        <div class="col-md-4 card1" onclick="mem3()">
+          <div class="cd3row1">
+          </div>
+          <div class="row2">
+            6 months(&#8377; 1800)
+          </div>
+          <div  class="cd3row3">
+            <p>get 1600 coins to respond to enquiries <br>
+              get suggested to <br>students<br>
+              15 minutes advance alerts**<br>
+              free direct calla & messages form students<br>
+              choice to display your own phone <br>number
+            </p>
+          </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+  <div class="container-fluid container2">
+    <div class="row">
+      <div class="col-md-6" style="margin-left: 30%;">
+          <div class="oder">
+            oder summery
+          </div>
+          <div class="name1">
+              Platinum Membership | <span id="x1"></span> Coins
+              <span style="float:right;">₹ <span id="x2"></span></span>
+          </div>
+          <div class="name1">
+            Sub-Total :<span style="float: right;">₹ <span id="x3"></span></span>
+          </div>
+          <div class="name1">
+            GST @ 18% <span style="float:right">₹ <span id="gst_amt"></span></span>
+          </div>
+          <div class="name1">
+              Total :<span style="margin-left: 70%;">₹ <span id="x4"></span> </span> 
+          </div>
+          <br/>
+      </div>
+    </div>
+  </div>
+</html>
+

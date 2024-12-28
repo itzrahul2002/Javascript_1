@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showmsg()
+        {
+            // alert("ok")
+
+            // var data=document.getElementById("value").value;
+            // alert(data)
+            
+            // var data=document.getElementById("value").value;
+            // document.write(data)
+
+            // var data=document.getElementById("value").value;
+            // console.log(data);
+
+             var data=document.getElementById("value").value;
+             document.getElementById("answer").innerHTML=data;
+                
+        }
+        function sumoftwonumber()
+        {
+            var a=parseInt(document.getElementById("a").value);
+            var b=parseInt(document.getElementById("b").value);
+            var ans=a+b;
+            document.write(ans)
+        }
+        function prev()
+        {
+            document.getElementById("my_img").src="assets/gallery/01.jpg"
+        }
+        function next()
+        {
+            document.getElementById("my_img").src="assets/gallery/02.jpg"
+        }
+        function prv()
+        {
+            document.getElementById("my_pic").src="assets/gallery/03.jpg"
+        }
+        function net()
+        {
+            document.getElementById("my_pic").src="assets/gallery/04.jpg"
+        }
+        function sow_text()
+        {
+            var data=getElementById("text").value;
+            document.getElementById("result").innerHTML=data;
+
+        }
+    </script>
+</head>
+<body>
+    <div id="answer"></div>
+    <input type="text" name="" id="value">
+    <br>
+    <input type="submit" value="show msg" onclick="showmsg()">
+    <br>
+    <input type="text" name="" id="a" placeholder="first num">
+    <br>
+    <input type="text" name="" id="b" placeholder="second num">
+    <br>
+    <input type="submit" value="ADD" onclick="sumoftwonumber()">
+    <br>
+    <div align="center">
+        <img src="assets/gallery/01.jpg" alt="" id="my_img">
+        <br>
+        <input type="submit" value="prev" onclick="prev()">
+        <input type="submit" value="next" onclick="next()">
+    </div>
+    <br>
+    <div align="center">
+        <img src="assets/gallery/03.jpg" alt="" id="my_pic" onmouseover="net()" onmouseout="prv()">
+    </div>
+    <br>
+    <div>
+        <input type="text" name="" id="text" onkeyup="sow_text()">
+    </div>
+</body>
+</html>

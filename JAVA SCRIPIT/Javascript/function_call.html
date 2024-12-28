@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function max()
+        {
+            let num=[1,3,5,6,7,67,9]
+            let temp=0;
+            
+            for(i=0;i<num.length;i++)
+            {
+                if(temp<=num[i])
+                {
+                    temp=num[i]
+                }
+            }
+            document.write(temp)
+        }
+        max();
+
+        function add(a,b)
+        {
+            let ans=a+b
+            return ans;
+        }
+        document.write("<br/>"+add(10, 32));
+        document.write("<br/>"+add(1000, 30000));
+        // document.getElementById("x1").innerHTML="<br/>"+add(200, 400);
+
+        function sub(a,b)
+        {
+            let ans=a-b
+            return ans;
+        }
+        document.write("<br/>"+sub(10, 5));
+
+        function rev()
+        {
+            let num=[2,5,7,25,6,100]
+        
+            for(i=num.length-1; i>0;i--)
+            {
+                document.write("<br/>"+num[i])
+            }
+
+        }
+
+        function maxm()
+        {
+            let temp=0;
+            for(i=0;i<=num.length;i++)
+            {
+                if(temp<=num[i])
+                {
+                    temp=num[i]
+                }
+            }
+            document.write("<br/>"+temp)
+            return temp;
+        }
+        var num=[9,32,23,45,989,9];
+        maxm(num);
+        var num=[9,32,23,45,9809,9];
+        maxm(num);
+        var num=[9,32,23,45,103,9];
+        maxm(num);
+        var num=[9,32,23,45,99,9];
+        // maxm(num);
+
+        document.write("<br/>")
+        var result=maxm(num);
+        document.write("<br/> MAX IS :"+result)
+    </script>
+</head>
+<body>
+    <div id="x1"></div>
+    <input type="submit" value="rev" onclick="rev()">
+</body>
+</html>
